@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  overflow-x: hidden;
+ 
+}
+// header start
+header {
+  width: 100%;
+}
+.nav{
+    margin-left: 100px;
+}
+
+
+
+//   header finish
+//   main start
+.main {
+  &_bg {
+    margin-top: -050px;
+margin-left: -60px;
+  }
+}
+// main finish
+.box{
+    margin-top: 100px;
+   
+}
+p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.form input,
+.checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+.form span {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.inside-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+    gap: 10px;
+
+    p {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+form {
+    margin-bottom: 20px !important;
+}
+
+.none {
+    display: none;
+}
+
+.size {
+    display: flex;
+    gap: 40px;
+
+    input {
+        display: block;
+        width: 110px;
+        height: 110px;
+        position: relative;
+        appearance: none;
+        border: 1px solid black;
+        border-radius: 50%;
+        transition: background .2s ease-in-out;
+
+        &:checked {
+            background: #00000057;
+        }
+    }
+}
+
+.s25::after {
+    content: "25cm";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.s30::after {
+    content: "30cm";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.s35::after {
+    content: "35cm";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+select {
+    width: 200px;
+    font-size: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.hr {
+    width: 2px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    display: none;
+
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+ 
+    width: 50%;
+    border-left: 1px solid #000;
+    padding-left: 30px;
+    
+}
+
+p {
+    span {
+        font-weight: normal;
+    }
+}
+
+.label {
+    font-size: 20px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.dropdown-item {
+    opacity: 0.8;
+
+    &:hover {
+        background: none;
+        color: #fff;
+        opacity: 1;
+    }
+}
+
+.off {
+    a {
+        font-size: 20px;
+    }
+}
